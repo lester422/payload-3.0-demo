@@ -2,6 +2,7 @@ import { Badge } from '@/components/Badge'
 import { Background } from '@/components/Background'
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 const Page = () => {
   return (
@@ -26,6 +27,13 @@ const Page = () => {
             running the Local API can be found at <Link href="/my-route">/my-route</Link>.
           </p>
           <p>You can use the Local API in your server components like this:</p>
+          <Image
+            src={
+              'https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            }
+            fill
+            alt={'lake'}
+          />
         </article>
         <div className="codeBlock">
           <pre>
